@@ -33,13 +33,14 @@ public class StudentEntity{
     public String getEmail(){
         return email;
     }
-    public StudentEntity std(String name,float cgpa,String email){
+    public StudentEntity(Long id,String name,float cgpa,String email){
+        this.id=id;
         this.name=name;
         this.cgpa=cgpa;
         this.email=email;
     }
 
-    public StudentEntity std(){
+    public StudentEntity(){
 
     }
    
