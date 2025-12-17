@@ -23,5 +23,9 @@ public class StudentServiceImpl implements StudentService {
     public StudentEntity getStudents(){
         return repo.findAll();  
     }
+    @Override
+    public StudentEntity getStudentById(Long id){
+        return repo.findById(id);
+    }
 
 }
