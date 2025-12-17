@@ -9,37 +9,29 @@ public class StudentEntity{
     private float cgpa;
     private Striing email;
 
-
-
-    public void setId(){
+    public void setId(Long id){
         this.id=id;
     }
     public Long getId(){
         return id;
     }
-    public String setName(){
+    public String setName(String name){
         this.name=name;
     }
     public String getName(){
         return name;
     }
-    public void setId(){
-        this.id=id;
+    public float setCgpa(float cgpa){
+        this.cgpa=cgpa;
     }
-    public int getId(){
-        return id;
+    public float getCgpa(){
+        return cgpa;
     }
-    public void setId(){
-        this.id=id;
+    public String setEmail(String email){
+        this.email=email;
     }
-    public int getId(){
-        return id;
+    public String getEmail(){
+        return email;
     }
-    public void setId(){
-        this.id=id;
-    }
-    public int getId(){
-        return id;
-    }
-
+   
 }
