@@ -13,31 +13,34 @@ public class StudentEntity{
     private Long id;
     private String name;
     private float cgpa;
-    private Striing email;
+    private String email;
 
-    public void setId(Long id){
-        this.id=id;
-    }
-    public Long getId(){
-        return id;
-    }
-    public String setName(String name){
+    public void setName(String name){
         this.name=name;
     }
     public String getName(){
         return name;
     }
-    public float setCgpa(float cgpa){
+    public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
     public float getCgpa(){
         return cgpa;
     }
-    public String setEmail(String email){
+    public void setEmail(String email){
         this.email=email;
     }
     public String getEmail(){
         return email;
+    }
+    public StudentEntity std(String name,float cgpa,String email){
+        this.name=name;
+        this.cgpa=cgpa;
+        this.email=email;
+    }
+
+    public StudentEntity std(){
+
     }
    
 }
